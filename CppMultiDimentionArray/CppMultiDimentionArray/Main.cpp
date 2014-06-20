@@ -1,6 +1,8 @@
+#ifdef _MSC_VER
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
+#endif
 #include <assert.h>
 #include "array.h"
 #include <assert.h>
@@ -34,7 +36,9 @@ int main()
 		assert(numbers[1][2][1]==12);
 		assert(numbers[0][1][3]==8);
 	}
+#ifdef _MSC_VER
 	_CrtDumpMemoryLeaks();
+#endif
 	return 0;
 }
 

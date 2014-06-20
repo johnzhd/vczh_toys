@@ -6,3 +6,6 @@
 *.test.txt
 ~$*.docx
 ~*.tmp
+*.o
+**/Bin/**
+*~
